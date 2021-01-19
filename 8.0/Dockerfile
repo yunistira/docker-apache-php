@@ -22,7 +22,7 @@ RUN	\
 	&& add-apt-repository -y ppa:ondrej/php \
 	&& add-apt-repository -y ppa:ondrej/apache2 \
 	&& apt-get update \
-    && apt-get install -y curl apache2 libapache2-mod-php8.0 php8.0-cli php8.0-readline php8.0-mbstring php8.0-zip php8.0-intl php8.0-xml php8.0-json php8.0-curl php8.0-gd php8.0-pgsql php8.0-mysql php-pear \
+    && apt-get install -y curl apache2 libapache2-mod-php8.0 php8.0-cli php8.0-readline php8.0-mbstring php8.0-zip php8.0-intl php8.0-xml php8.0-curl php8.0-gd php8.0-pgsql php8.0-mysql php-pear \
     # Apache settings
     && cp /dev/null ${APACHE_CONF_DIR}/conf-available/other-vhosts-access-log.conf \
     && rm ${APACHE_CONF_DIR}/sites-enabled/000-default.conf ${APACHE_CONF_DIR}/sites-available/000-default.conf \
